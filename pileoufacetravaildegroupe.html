@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jeux Pile ou Face</title>
+  </head>
+  <body>
+    <h1>Jeu Pile ou Face</h1>
+    <button onclick="playGame()">Jouer</button>
+    <p id="result"></p>
+
+    <script>
+      function playGame() {
+        var result = Math.random() < 0.5 ? "Pile" : "Face";
+        document.getElementById("result").innerHTML = "Résultat : " + result;
+      }
+    </script>
+  </body>
+</html>
